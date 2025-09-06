@@ -2,8 +2,8 @@ import express from 'express';
 
 const app = express();
 
-app.use('/api/register', () => {
-  console.log('Sample register endpoint');
+app.use('/api/register', (req, res) => {
+  res.send('Sample register endpoint');
   // Registration logic here
 });
 
